@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bhandara Bites</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        body,
+        html {
+            height: 100%
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+
+        .about-font,
+        .menu-item-description
+        {
+            font-family: 'Annie Use Your Telescope';
+        }
+
+        .menu {
+            display: none
+        }
+
+        .bgimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("images/bcg.jpg");            
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">HOME</a>
+            <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge">Opening Soon!</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white w3-hide-small w3-black" style="font-size:100px"><br>BHANDARA BITES</span>
+            <span class="w3-text-white w3-hide-large w3-hide-medium w3-black" style="font-size:60px"><b>thin<br>  BHANDARA
+                    BITES  </b></span>
+            <!-- <p><a href="#menu" class="w3-button w3-xxlarge w3-black" style="font-size:60px">BHANDARA BITES</a></p> -->
+        </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Healthy');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Healthy Bites</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'thali');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Thali</div>
+                </a>
+
+                <a href="javascript:void(0)" onclick="openMenu(event, 'combo-meals');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Combo Meals</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'singles');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Single Items</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'desserts');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Desserts</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'beverages');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Beverages</div>
+                </a>
+            </div>
+
+            <div id="Healthy" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Bean and Barley</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <p class="w3-text-grey menu-item-description ">Fresh tomatoes and basil blended with healthy beans and barley</p>
+                <hr>
+
+                <h1><b>Jawar with Soya</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <p class="w3-text-grey menu-item-description">Fresh tomatoes and basil blended with Jawar and Soya</p>
+                <hr>
+
+                <h1><b>Sprouts with Vegetables</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span>
+                </h1>
+                <p class="w3-text-grey menu-item-description">Fresh vegetables blended with sprouts and Indian spices</p>
+                <hr>
+
+                <h1><b>Millets with Vegetables</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span>
+                </h1>
+                <p class="w3-text-grey menu-item-description">Fresh vegetables blended with millets and Indian spices</p>
+            </div>
+
+            <div id="thali" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Bhandara Veg Thali</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 139</span></h1>
+                <p class="w3-text-grey menu-item-description">Daal langar wali, seasonal vegetables, rice, and multi-grain roti/tawa parantha
+                    (2 pieces) served with raita, salad, and achaar</p>
+                <hr>
+
+                <h1><b>Bhandara Makhan Thali</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 179</span></h1>
+                <p class="w3-text-grey menu-item-description">Daal makhani, paneer makhanwala, rice, and multi-grain roti/tawa parantha (2
+                    pieces) served with raita, salad, achaar, and rice khoya kheer</p>
+            </div>
+
+            <div id="combo-meals" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Kadhi Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79/109</span></h1>
+                <p class="w3-text-grey menu-item-description">Bhandara style khadi with rice served with achaar and salad</p>
+                <hr>
+
+                <h1><b>Choley Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79/109</span></h1>
+                <p class="w3-text-grey menu-item-description">Bhandara style chole with rice served with achaar and salad</p>
+                <hr>
+
+                <h1><b>Rajma Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79/109</span></h1>
+                <p class="w3-text-grey menu-item-description">Bhandara style rajma with rice served with achaar and salad</p>
+                <hr>
+
+                <h1><b>Millets Khichdi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 109</span></h1>
+                <p class="w3-text-grey menu-item-description">Bhandara style millets khichdi served with dahi, achaar, and salad</p>
+            </div>
+
+            <div id="desserts" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Chawal Khoya kheer</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Bhandara style kheer (rice pudding) blended with Khoya</p>
+                <hr>
+
+                <h1><b>Millets Khoya kheer</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 99</span></h1>
+                <p class="w3-text-grey menu-item-description">Bhandara style healthy millets kheer (pudding) blended with Khoya</p>
+                <hr>
+            </div>
+
+            <div id="singles" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Daal Makhani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 140 (Half)/220
+                        (Full)</span></h1>
+                <hr>
+
+                <h1><b>Paneer Makhani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 160 (Half)/250
+                        (Full)</span></h1>
+                <hr>
+
+                <h1><b>Multi-Grain Tawa Roti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 25</span></h1>
+                <hr>
+
+                <h1><b>Tawa Parantha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 25</span></h1>
+                <hr>
+
+                <h1><b>Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 70</span></h1>
+                <hr>
+            </div>
+
+            <div id="beverages" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Haldi Kawa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Hot cocktail energy booster that is blended with turmeric, ginger, and jaggery
+                </p>
+                <hr>
+
+                <h1><b>Soya Nutella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Hot cocktail prepared from the healthy fusion of Soya Nutella</p>
+                <hr>
+
+                <h1><b>Chiya Nariyal Sharbat</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Cold cocktail prepared from the healthy fusion of Chia seeds and Nariyal
+                    (coconut)</p>
+                <hr>
+
+                <h1><b>Kokum Sharbat</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Cold cocktail that is blended with Kokum sharbat</p>
+                <hr>
+
+                <h1><b>Gulab Jal Sattu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Cold cocktail that is uniquely blended with gulab jal and sattu</p>
+                <hr>
+
+                <h1><b>Shareefa Lassi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Cold lassi prepared with Shareefa</p>
+                <hr>
+
+                <h1><b>Jharber Lassi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Cold lassi prepared with Shareefa</p>
+                <hr>
+            </div>
+
+            <br>
+
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge about-font" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+            <span class="w3-tag">Restaurant's Journey!</span> 
+            <br>
+            <p>Bhandara Bites restaurant is founded by Bright bharat Venture corporation with the vision to bring
+                authentic Indian style cuisines with healthy ingredients for everyone (in bhandara style). This is a joint venture by Mr. Namit and Mr. Vinod Kumar Saini.</p>
+            <br>
+
+            <img src="images/restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom"
+            alt="Restaurant">
+        <h1><b>Opening Hours</b></h1>
+
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p>Mon & Tue CLOSED</p>
+                <p>Wednesday 10.00 - 24.00</p>
+                <p>Thursday 10:00 - 24:00</p>
+            </div>
+            <div class="w3-col s6">
+                <p>Friday 10:00 - 12:00</p>
+                <p>Saturday 10:00 - 23:00</p>
+                <p>Sunday Closed</p>
+            </div>
+        </div>
+        <br>
+
+            <span class="w3-tag">The Chef? Vinod Kumar Saini himself</span><img src="images/chef_1.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef">
+            <br>
+            <p>Chef Vinod Saini, a name synonymous for creative excellence with over 30 years of
+                experience in fine dining restaurants and luxury hotels in India and Canada and currently
+                the Head Master Chef Indian at Jamavar, The Leela Palace New Delhi.
+                Chef Vinod began his career with The Oberoi group of hotels in India. Started working at
+                their flagship hotel in New Delhi in 1989, with stints in French restaurant - La Rochelle, all
+                day dining and the signature Fine Dine Indian restaurant “Kandahar”. He assisted the
+                Chef in ensuring high guest satisfaction and maintaining “Kandahar” as one of the best
+                Indian restaurants in the city.
+            </p>
+
+            <p>
+                After 15 years with The Oberoi Group, he moved to Canada for opening fine dining Indian
+                restaurants in Toronto and Vancouver in 2005.
+                Post his international exposure of four years in, he returned to India in 2009 and joined
+                Marut Sikka’s celebrated “Kainoosh”, a contemporary and classic Indian restaurant, as
+                the Executive Sous Chef.
+
+            </p>
+
+            <p>
+
+            </p>
+            An expert of the Indian Cuisine, he has been heading the kitchen at Jamavar since its
+            inception which serves royal Indian cuisine at The Leela Palace New Delhi, as the Indian
+            Master Chef. From being accorded as ‘Best Indian Chef’ by Food and Nightlife, while he
+            was the Chef de cuisine at Jamavar in May 2012 to receiving Best North Indian
+            Restaurant in Five-Star Hotel for Jamavar at BBC Good Food Awards 2019, Chef Saini has
+            spearheaded the restaurants’ kitchen making it the one of the preferred destination to
+            enjoy Indian culinary fare in the city.
+
+            </p>
+
+            <p>
+                Chef Vinod has also been recognized by experts for his modern interpretation of the
+                dishes from the bygone era. A culinary story teller, he draws his inspiration from the
+                diverse Indian culture that imparts his dishes a distinctive character.
+                He also specializes in curating exclusive cooking classes and interactive food demonstrations for
+                guests, which take them on an indulgent journey to discover the
+                magical history of Indian spices and their origins.
+                Chef Vinod actively contributes to the on board menu of world renowned Lufthansa
+                Airlines, and has also been appointed as their ‘Star Chef’ - Consultant Chef, for first and
+                business class. He was also one of the judges on the panel of Lufthansa for their
+                concluded ‘Cook and Fly Contest’.
+            </p>
+
+            <p>
+                His core strengths are excelling at innovative Indian food, staying within the boundaries
+                of Indian flavors and retaining the authenticity of the cuisine. He has excellent kitchen
+                organization skills, employee management and development, food quality monitoring,
+                cost control and HACCP.
+                In his free time, Vinod loves to listen to music and enjoy old retro hits.
+            </p>
+
+
+
+        </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap"> -->
+
+    <!-- Contact -->
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+            <p>Find us at some address at some place or call us at 9871456966</p>
+            <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We
+                understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look
+                and taste.</p>
+            <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:
+            </p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                </p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                        required name="date" value="2020-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                        placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+        <p>Copyrights © 2024 All Rights Reserved by Bright Bharat Vebture</p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
