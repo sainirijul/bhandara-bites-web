@@ -26,8 +26,7 @@
 
         .about-font,
         .contact-font,
-        .menu-item-description
-        {
+        .menu-item-description {
             font-family: 'Annie Use Your Telescope';
         }
 
@@ -38,7 +37,7 @@
         .bgimg {
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: url("images/Tadka_dahi.jpg");            
+            background-image: url("images/Tadka_dahi.jpg");
             min-height: 100%;
         }
 
@@ -57,6 +56,8 @@
             <a href="#menu" class="w3-bar-item w3-button">MENU</a>
             <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
             <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+
+            <a href="#myOrder" class="w3-bar-item w3-button">ORDER</a>
         </div>
     </div>
 
@@ -66,7 +67,7 @@
             <span class="w3-tag w3-xlarge">Now Serving!</span>
         </div>
         <div class="w3-display-middle w3-center">
-            <span class="w3-text-white w3-hide-small w3-black" style="font-size:100px"><br>  BHANDARA BITES  </span>
+            <span class="w3-text-white w3-hide-small w3-black" style="font-size:100px"><br> BHANDARA BITES </span>
             <span class="w3-text-white w3-hide-large w3-hide-medium w3-black" style="font-size:60px"><b>BHANDARA
                     BITES </b></span>
             <!-- <p><a href="#menu" class="w3-button w3-xxlarge w3-black" style="font-size:60px">BHANDARA BITES</a></p> -->
@@ -80,8 +81,13 @@
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
             <div class="w3-row w3-center w3-border w3-border-dark-grey">
                 <a href="javascript:void(0)" onclick="openMenu(event, 'Healthy');" id="myLink">
-                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bespoke Healthy Bites</div>
+                    <div class="w3-col s6 tablink w3-padding-large w3-hover-red">Bespoke Healthy Bites</div>
                 </a>
+
+                <a href="javascript:void(0)" onclick="openMenu(event, 'quick-bites');">
+                    <div class="w3-col s6 tablink w3-padding-large w3-hover-red">Quick Bites</div>
+                </a>
+
                 <a href="javascript:void(0)" onclick="openMenu(event, 'thali');">
                     <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Thali</div>
                 </a>
@@ -89,122 +95,226 @@
                 <a href="javascript:void(0)" onclick="openMenu(event, 'combo-meals');">
                     <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Combos</div>
                 </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'singles');">
-                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Single Items</div>
-                </a>
+
                 <a href="javascript:void(0)" onclick="openMenu(event, 'desserts');">
                     <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Desserts</div>
                 </a>
+
                 <a href="javascript:void(0)" onclick="openMenu(event, 'beverages');">
-                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Beverages</div>
+                    <div class="w3-col s6 tablink w3-padding-large w3-hover-red">Beverages</div>
                 </a>
+
+                <a href="javascript:void(0)" onclick="openMenu(event, 'singles');">
+                    <div class="w3-col s6 tablink w3-padding-large w3-hover-red">Single Items</div>
+                </a>
+                
+                
             </div>
 
             <div id="Healthy" class="w3-container menu w3-padding-32 w3-white">
-                <h1><b>Beans and Barley Assemble</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89</span></h1>
-                <p class="w3-text-grey menu-item-description ">A symphony of Assorted beans and barley tossed in aromatic spices</p>
+                <h1><b>Beans and Barley Assemble</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span>
+                </h1>
+                <p class="w3-text-grey menu-item-description ">A symphony of Assorted beans and barley tossed in
+                    aromatic spices</p>
                 <hr>
 
-                <h1><b>Jawar Fusion with Soya</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89</span></h1>
+                <h1><b>Jawar Fusion with Soya</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
                 <p class="w3-text-grey menu-item-description">A hearty chat salad of sorghum and soyabean</p>
                 <hr>
 
-                <h1><b>Sprouts and bell peppers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89</span>
+                <h1><b>Sprouts and bell peppers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span>
                 </h1>
                 <p class="w3-text-grey menu-item-description">A jackpot of healthy bites with vibrant colours</p>
                 <hr>
             </div>
 
+
+            <div id="quick-bites" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Cheese Potato Rolls with Soya Crisp</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span>
+                </h1>
+                <p class="w3-text-grey menu-item-description ">Savory mashed potatoes infused with aromatic Indian spices, enveloped in a crisp coating, accompanied by a delightful Soya Crisp for an extra crunch. Served with a tangy chutney for a burst of flavor</p>
+                <hr>
+
+                <h1><b>Nutri Kulcha with Tandoori Chutney</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">Nutri Kulcha features a hearty mix of nutritious ingredients, blended with traditional Indian spices, and cooked to perfection. Served alongside our signature Tandoori Chutney, boasting a smoky flavor with hints of roasted spices, elevating each bite</p>
+                <hr>
+
+                <h1><b>Paneer Lababdaar on Toast</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span>
+                </h1>
+                <p class="w3-text-grey menu-item-description">Served on a perfectly toasted bread slice, each bite is a harmonious blend of textures and flavors, leaving your taste buds craving more</p>
+                <hr>
+            </div>
+
             <div id="thali" class="w3-container menu w3-padding-32 w3-white">
                 <h1><b>Bhandara Subz Thali</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 139</span></h1>
-                <p class="w3-text-grey menu-item-description">Includes daal langar wali, seasonal vegetable, steamed basmati, multi-grain chapati, raita, salad, and achar</p>
+                <p class="w3-text-grey menu-item-description">Includes daal langar wali, seasonal vegetable, steamed
+                    basmati, multi-grain chapati, raita, salad, and home made lemon pickle</p>
                 <hr>
 
                 <h1><b>Bhandara Makhan Thali</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 179</span></h1>
-                <p class="w3-text-grey menu-item-description">Includes daal makhani, paneer makhanwala, steamed basmati, multi-grain chapati, raita, salad, achar, and khoya kheer</p>
+                <p class="w3-text-grey menu-item-description">Includes daal makhani, shahi paneer, steamed basmati,
+                    multi-grain chapati, mint boondi raita, salad, home made lemon pickle, and jawar halwa</p>
             </div>
 
             <div id="combo-meals" class="w3-container menu w3-padding-32 w3-white">
-                <h1><b>Kadhi Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 99</span></h1>
+                <h1><b>Barista Nutri Pulao</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 99</span></h1>
+                <p class="w3-text-grey menu-item-description">“Bhandara Bites” delicacy of aromatic basmati with soya
+                    nuggets
+                    ,tomatoes, and peppers, served with mint boondi raita and homemade lemon pickle</p>
+                <hr>
+
+
+                <h1><b>Kadhi Chawal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89</span></h1>
                 <p class="w3-text-grey menu-item-description">Served with kadhi, steamed rice, achar, and salad</p>
                 <hr>
 
-                <h1><b>Choley Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 99</span></h1>
+                <h1><b>Choley Chawal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89</span></h1>
                 <p class="w3-text-grey menu-item-description">Served with choley, steamed rice, achar, and salad</p>
                 <hr>
 
-                <h1><b>Rajma Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 99</span></h1>
+                <h1><b>Rajma Chawal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89</span></h1>
                 <p class="w3-text-grey menu-item-description">Served with rajma, steamed rice, achar, and salad</p>
                 <hr>
 
-                <h1><b>Millets Khichdi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 119</span></h1>
-                <p class="w3-text-grey menu-item-description">Served with dahi, achar, and salad</p>
+                <h1><b>Moong Daal Tadka Chawal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89</span>
+                </h1>
+                <p class="w3-text-grey menu-item-description">Served with moong tadka daal, steamed rice, achar, and
+                    salad</p>
+                <hr>
+
+                <h1><b>Daal Langwar Wali Chawal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89</span>
+                </h1>
+                <p class="w3-text-grey menu-item-description">Served with langwar waali daal, steamed rice, achar, and
+                    salad</p>
+                <hr>
+
+                <h1><b>Shahi Paneer Chawal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 119</span></h1>
+                <p class="w3-text-grey menu-item-description">Served with shahi paneer, steamed rice, achar, and salad
+                </p>
+                <hr>
+
+                <h1><b>Soya Masala Chawal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 109</span></h1>
+                <p class="w3-text-grey menu-item-description">Served with soya masala, steamed rice, achar, and salad
+                </p>
+                <hr>
+
+                <h1><b>Millet Khichdi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 119</span></h1>
+                <p class="w3-text-grey menu-item-description">A perfect comfort food served with dahi, salad, and pickle
+                </p>
+                <hr>
+
+                <h1><b>Millet Noodles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 119</span></h1>
+                <p class="w3-text-grey menu-item-description">A healthy preparation of millet noodles with tomatoes and
+                    seasonal vegetable</p>
+                <hr>
             </div>
 
             <div id="desserts" class="w3-container menu w3-padding-32 w3-white">
-                <h1><b>Khoya kheer</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
-                <p class="w3-text-grey menu-item-description">A slow cooked creamy pudding</p>
+                <h1><b>Jawar Halwa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <p class="w3-text-grey menu-item-description">An irresistibly tasty and evergreen
+                    bhandara delight made with jawar and broken
+                    cashew nut</p>
                 <hr>
 
-                <h1><b>Bhandara Special Halwa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
-                <p class="w3-text-grey menu-item-description">An irresistably tasty and evergreen bhandara delight</p>
+                <h1><b>Khoya kheer</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <p class="w3-text-grey menu-item-description">A slow cooked creamy pudding with raisin and nuts</p>
                 <hr>
+
             </div>
 
             <div id="singles" class="w3-container menu w3-padding-32 w3-white">
                 <h1><b>Daal Makhani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 139 (Half)/229
                         (Full)</span></h1>
                 <hr>
-
-                <h1><b>Paneer Makhani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 169 (Half)/249
+                <h1><b>Daal Langar Wali</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 109 (Half)/159
                         (Full)</span></h1>
                 <hr>
 
-                <h1><b>Tawa Roti Plain</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 12</span></h1>
+                <h1><b>Moong Dal Tadka</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89 (Half)/139
+                        (Full)</span></h1>
+                <hr>
+                <h1><b>Shahi Paneer</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 169 (Half)/249
+                        (Full)</span></h1>
                 <hr>
 
-                <h1><b>Multi-Grain Tawa Roti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 19</span></h1>
+                <h1><b>Seasonal Mixed Vegetables</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 119
+                        (Half)/189
+                        (Full)</span></h1>
                 <hr>
 
-                <h1><b>Tawa Parantha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 19</span></h1>
+                <h1><b>Soya Chaap Takatak</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 139 (Half)/219
+                        (Full)</span></h1>
                 <hr>
 
-                <h1><b>Stuffed Parantha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 39</span></h1>
+                <h1><b>Kadi Pakoda</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89 (Half)/139
+                        (Full)</span></h1>
                 <hr>
 
-                <h1><b>Steamed Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <h1><b>Rajma Raseela</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89 (Half)/139
+                        (Full)</span></h1>
+                <hr>
+
+                <h1><b>Channa Masala</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 89 (Half)/139
+                        (Full)</span></h1>
+                <hr>
+
+                <h1><b>Tawa Roti Plain</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 10</span></h1>
+                <hr>
+
+                <h1><b>Multi-Grain Tawa Roti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 15</span></h1>
+                <hr>
+
+                <h1><b>Tawa Parantha Plain</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 19</span></h1>
+                <hr>
+
+                <h1><b>Stuffed Parantha (Aloo/Gobhi)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.
+                        39</span></h1>
+                <hr>
+
+                <h1><b>Stuffed Paneer Parantha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span>
+                </h1>
+                <hr>
+
+                <h1><b>Steamed Plain Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
+                <hr>
+
+                <h1><b>Jeera Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <hr>
+
+                <h1><b>Raita Mint Boondi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 49</span></h1>
+                <hr>
+
+                <h1><b>Sliced Green Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 39</span></h1>
+                <hr>
+
+                <h1><b>Kachumber salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 39</span></h1>
                 <hr>
             </div>
 
             <div id="beverages" class="w3-container menu w3-padding-32 w3-white">
-                <h1><b>Turmeric and lotus seed booster</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <h1><b>Turmeric and lotus seed booster</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.
+                        69</span></h1>
                 <p class="w3-text-grey menu-item-description">A perfect blend of natural immunity boosters
                 </p>
                 <hr>
 
-                <h1><b>Soya Nutella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
-                <p class="w3-text-grey menu-item-description">A sure-shot chocolate lovers delight</p>
-                <hr>
-
-                <h1><b>Chia Nariyal Sharbat</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <h1><b>Chia Nariyal Sharbat</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
                 <p class="w3-text-grey menu-item-description">The ultimate thirst-quencher to beat the heat</p>
                 <hr>
 
-                <h1><b>Gulab Jal Sattu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <h1><b>Thandai Jal Sattu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
                 <p class="w3-text-grey menu-item-description">An indian superfood drink with detoxifying properties</p>
                 <hr>
 
-                <h1><b>Shareefa Booster</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
+                <h1><b>Shareefa Lassi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span></h1>
                 <p class="w3-text-grey menu-item-description">A tempting, sweet, and icy digestive drink</p>
                 <hr>
 
-                <h1><b>Jharber Ananas Crush</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
-                <p class="w3-text-grey menu-item-description">A colorful punch of crushed strawberries and pineapple</p>
+                <h1><b>Strawberry Papaya Crush</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 69</span>
+                </h1>
+                <p class="w3-text-grey menu-item-description">A colorful punch of crushed strawberries and papaya</p>
                 <hr>
 
-                <h1><b>PCC (Paan coco coffee)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 79</span></h1>
-                <p class="w3-text-grey menu-item-description">Paan-infused mocha drink with a hint of coffee</p>
-                <hr>
             </div>
 
             <br>
@@ -216,33 +326,61 @@
     <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge about-font" id="about">
         <div class="w3-content">
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
-            <span class="w3-tag">Restaurant's Journey!</span> 
+            <span class="w3-tag">Restaurant's Journey!</span>
             <br>
             <p>Bhandara Bites restaurant is founded by Bright bharat Venture corporation with the vision to bring
-                authentic Indian style cuisines with healthy ingredients for everyone (in bhandara style). This is a joint venture by Mr. Namit Kumar and Mr. Vinod Kumar Saini.</p>
+                authentic Indian style cuisines with healthy ingredients for everyone (in bhandara style). This is a
+                joint venture by Mr. Namit Kumar and Mr. Vinod Kumar Saini.</p>
             <br>
 
-            <img src="images/restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom"
-            alt="Restaurant">
-        <h1><b>Opening Hours</b></h1>
+            <img src="images/restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+            <h1><b>Opening Hours</b></h1>
 
-        <div class="w3-row">
-            <div class="w3-col s6">
-                <p>Weekdays (Monday to Friday) 11.00 - 22.00</p>
+            <div class="w3-row">
+                <div class="w3-col s6">
+                    <p>Weekdays (Monday to Friday) 11.00 - 22.00</p>
+                </div>
+                <div class="w3-col s6">
+                    <p>Weekend (Saturday - Sunday) 11:00 - 23:00</p>
+                </div>
             </div>
-            <div class="w3-col s6">
-                <p>Weekend (Saturday - Sunday) 11:00 - 23:00</p>
-            </div>
-        </div>
-        <br>
+            <br>
             <span class="w3-tag">The Chef? Vinod Kumar Saini himself</span><br>
             <img src="images/chef_in_action1.png" style="width:100%" class="w3-margin-top w3-margin-bottom"
-            alt="Chef Vinod Kumar Saini">
+                alt="Chef Vinod Kumar Saini">
             <p>
-                Chef Vinod Saini, a culinary virtuoso with 34 years of experience in fine dining across India and Canada. Formerly, the Head Master Chef Indian at Jamavar, The Leela Palace New Delhi, Chef Saini's accolades include 'Best Indian Chef' and the restuarant receiving Best North Indian Restaurant in Five-Star Hotel at BBC Good Food Awards 2019. Recognized for his modern twist on traditional dishes, Chef Vinod is a culinary storyteller, offering exclusive cooking classes, and interactive demonstrations. His expertise extends to curating menus for Lufthansa Airlines, where he also served as their ‘Star Chef’ - Consultant Chef, for first and business class. He was also one of the judges on the panel of Lufthansa for their concluded ‘Cook and Fly Contest’.
+                Chef Vinod Saini, a culinary virtuoso with 34 years of experience in fine dining across India and
+                Canada. Formerly, the Head Master Chef Indian at Jamavar, The Leela Palace New Delhi, Chef Saini's
+                accolades include 'Best Indian Chef' and the restuarant receiving Best North Indian Restaurant in
+                Five-Star Hotel at BBC Good Food Awards 2019. Recognized for his modern twist on traditional dishes,
+                Chef Vinod is a culinary storyteller, offering exclusive cooking classes, and interactive
+                demonstrations. His expertise extends to curating menus for Lufthansa Airlines, where he also served as
+                their ‘Star Chef’ - Consultant Chef, for first and business class. He was also one of the judges on the
+                panel of Lufthansa for their concluded ‘Cook and Fly Contest’.
             </p>
         </div>
     </div>
+
+
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge about-font" id="myOrder">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Order Now!!</h1>
+            <div class="w3-row-padding w3-center" style="margin-top:64px">
+                <div class="w3-quarter">
+                    <a href="https://www.zomato.com/ncr/bhandara-bites-sector-7-dwarka-new-delhi/order">
+                        <img src="images/zomato.jpg" alt="Zomato" style="width:100px;height:100px;border-radius:50%;">
+                    </a>
+                </div>
+                <div class="w3-quarter">
+                    <a href="https://www.swiggy.com/restaurants/bhandara-bites-dwarka-delhi-832522">
+                        <img src="images/swiggy.png" alt="Swiggy" style="width:100px;height:100px;border-radius:50%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
 
     <!-- Image of location/map -->
     <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap"> -->
@@ -252,7 +390,8 @@
         <div class="w3-content">
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
             <p>Find us at below address or call us at 9871456966</p>
-            <p class="highlight-address">Shop No. 2, C 365 Palam Extension Sector 7 Dwarka, Near Ramphal Chowk, New Delhi 110077</p>
+            <p class="highlight-address">Shop No. 2, C 365 Palam Extension Sector 7 Dwarka, Near Ramphal Chowk, New
+                Delhi 110077</p>
             <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We
                 understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look
                 and taste.</p>
